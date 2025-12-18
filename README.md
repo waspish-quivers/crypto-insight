@@ -1,4 +1,4 @@
-<img width="746" height="519" alt="image" src="https://github.com/user-attachments/assets/b0b88866-d076-4921-894d-086e87b9cb6b" /># Blockchain Insight (Built for Base)
+
 
 Deployed on Base Mainnet.
 
