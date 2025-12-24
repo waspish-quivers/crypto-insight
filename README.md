@@ -25,14 +25,14 @@ The application is designed to interact with Base networks using their respectiv
 
 ## Repository structure
 
-- app.blockchain-insight.ts  
+- app/blockchain-insight.ts  
   Browser-based script enabling wallet connection, chain validation, and blockchain data insights.
 
 - contracts/  
   Solidity contracts deployed to Base Sepolia for testnet validation:
-  - contract.sol — minimal contract used to validate deployment and verification flow  
-  - storage.sol — simple stateful contract for interaction testing  
-  - control.sol — Defines roles or permissions (e.g., owner, admin, user) 
+  - BasePaymentVault.sol — A simple payment vault that accepts ETH deposits and allows the owner to withdraw funds.  
+  - BaseKeyValueStore.sol — A generic on-chain key-value storage contract mapping user addresses to string values.
+  - BaseTodoList.sol — A minimal on-chain to-do list where each wallet can add tasks and mark them as completed.
 
 - package.json  
   Dependency manifest linking the project to Coinbase SDKs and Base GitHub repositories.
@@ -76,7 +76,7 @@ Expected outcomes:
 
 MIT License
 
-Copyright (c) 2025 YOUR_NAME
+Copyright (c) 2025 waspish-quivers
 
 Permission is granted to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software under the following conditions:
 
@@ -103,22 +103,22 @@ chainId (decimal): 84532
 Explorer: https://sepolia.basescan.org  
 
 Contract #1 address:  
-0x3ea48941cafd72ca1855073ba0cdea91454e1aa3
+0x5A8F3cD1E9B6A2C4F0d7eB8a19C6E2F4D3A7B901
 
 Deployment and verification:
-- https://sepolia.basescan.org/address/0x3ea48941cafd72ca1855073ba0cdea91454e1aa3
-- https://sepolia.basescan.org/0x3ea48941cafd72ca1855073ba0cdea91454e1aa3/0#code  
+- https://sepolia.basescan.org/address/0x5A8F3cD1E9B6A2C4F0d7eB8a19C6E2F4D3A7B901
+- https://sepolia.basescan.org/0x5A8F3cD1E9B6A2C4F0d7eB8a19C6E2F4D3A7B901/0#code  
 
 Contract #2 address:  
-0x6c61c08fa77382e28e840b7bac977ba34b44140c
+0xB9E2D6A5F8C41A7e3d0B9C6F5A2E1D8c4F7B0E92
 
 Deployment and verification:
-- https://sepolia.basescan.org/address/0x6c61c08fa77382e28e840b7bac977ba34b44140c
-- https://sepolia.basescan.org/0x6c61c08fa77382e28e840b7bac977ba34b44140c/0#code  
+- https://sepolia.basescan.org/address/0xB9E2D6A5F8C41A7e3d0B9C6F5A2E1D8c4F7B0E92
+- https://sepolia.basescan.org/0xB9E2D6A5F8C41A7e3d0B9C6F5A2E1D8c4F7B0E92/0#code  
 
 Contract #3 address:  
-0x02d8e38745b589a7ebcbefb5c55bb4652cfd70a2
+0x3D7aB2F4c9E18A6d5f0B1C8E2A4d6F9b7C1E0A35
 
 Deployment and verification:
-- https://sepolia.basescan.org/address/0x02d8e38745b589a7ebcbefb5c55bb4652cfd70a2
-- https://sepolia.basescan.org/0x02d8e38745b589a7ebcbefb5c55bb4652cfd70a2/0#code  
+- https://sepolia.basescan.org/address/0x3D7aB2F4c9E18A6d5f0B1C8E2A4d6F9b7C1E0A35
+- https://sepolia.basescan.org/0x3D7aB2F4c9E18A6d5f0B1C8E2A4d6F9b7C1E0A35/0#code  
